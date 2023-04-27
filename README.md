@@ -38,8 +38,9 @@ Channels 'FP1-F7', 'FP1-F3', 'FP2-F4', 'FT9-FT10', 'FT10-T8' were most expressiv
 - Linear Discriminant Analysis Classifier
 - 10-fold Cross-Validation
 
-CV Accuracy:
-<img width="367" alt="seizureMarker" src="https://user-images.githubusercontent.com/15255699/234983816-8d433668-1406-4c01-81d4-fd6927dc887f.PNG">
+CV Accuracy: ![image](https://user-images.githubusercontent.com/15255699/234988178-f239caf7-4412-461e-93f9-fb65232ec739.png)
+
+
 
 
 
