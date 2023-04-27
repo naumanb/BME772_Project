@@ -37,6 +37,7 @@ Channels 'FP1-F7', 'FP1-F3', 'FP2-F4', 'FT9-FT10', 'FT10-T8' were most expressiv
 ## Classification
 - Linear Discriminant Analysis Classifier
 - 10-fold Cross-Validation
+![image](https://user-images.githubusercontent.com/15255699/234988178-f239caf7-4412-461e-93f9-fb65232ec739.png)
 
 
 
