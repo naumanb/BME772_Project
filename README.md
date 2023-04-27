@@ -11,11 +11,36 @@ This project aims to detect seizures in patients by analyzing raw EEG data. The 
 
 ## Pipeline
 
-<img width="377" alt="rms" src="https://user-images.githubusercontent.com/15255699/234983807-d2f77d7f-1947-4b34-88a4-f4094fbd1f2e.PNG">
-<img width="361" alt="deltaBand" src="https://user-images.githubusercontent.com/15255699/234983810-5ecf1b72-0504-42cd-acdc-0a4017173e2e.PNG">
-<img width="370" alt="Normalize" src="https://user-images.githubusercontent.com/15255699/234983812-683276ab-4945-4624-9453-935f14159f52.PNG">
+<img width="654" alt="Capture" src="https://user-images.githubusercontent.com/15255699/234984534-6ee588ec-d7a4-4d4a-970a-0f63996a8c5c.PNG">
+
+## Preprocessing
+
+Channels 'FP1-F7', 'FP1-F3', 'FP2-F4', 'FT9-FT10', 'FT10-T8' were most expressive in regards to certain features.
+
+### Taking average of expressive signals:
 <img width="381" alt="averaged" src="https://user-images.githubusercontent.com/15255699/234983814-f2266bc0-5686-4b56-9741-e70c8a67ebcc.PNG">
-<img width="367" alt="seizureMarker" src="https://user-images.githubusercontent.com/15255699/234983816-8d433668-1406-4c01-81d4-fd6927dc887f.PNG">
-<img width="371" alt="pdsmean" src="https://user-images.githubusercontent.com/15255699/234983818-5ef76376-990b-4482-ba38-34e72be5ee58.PNG">
+
+### Normalizing averaged signal:
+<img width="370" alt="Normalize" src="https://user-images.githubusercontent.com/15255699/234983812-683276ab-4945-4624-9453-935f14159f52.PNG">
+
+### Extracting Delta Band:
+<img width="361" alt="deltaBand" src="https://user-images.githubusercontent.com/15255699/234983810-5ecf1b72-0504-42cd-acdc-0a4017173e2e.PNG">
+
+## Extracting Features:
+- Root Mean Square (RMS)
+<img width="377" alt="rms" src="https://user-images.githubusercontent.com/15255699/234983807-d2f77d7f-1947-4b34-88a4-f4094fbd1f2e.PNG">
+- Max Power Spectral Density (PDS)
 <img width="377" alt="pds" src="https://user-images.githubusercontent.com/15255699/234983819-79d3af3e-93bb-4199-94fd-75caa2ce5aa0.PNG">
+- Mean Power Spectral Density
+<img width="371" alt="pdsmean" src="https://user-images.githubusercontent.com/15255699/234983818-5ef76376-990b-4482-ba38-34e72be5ee58.PNG">
+
+## Classification
+- Linear Discriminant Analysis Classifier
+- 10-fold Cross-Validation
+
+
+
+<img width="367" alt="seizureMarker" src="https://user-images.githubusercontent.com/15255699/234983816-8d433668-1406-4c01-81d4-fd6927dc887f.PNG">
+
+
 
